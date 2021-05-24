@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbarContainer {
+    background-color: rgb(230, 221, 221);
+}
+
+.navbar {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer {
+    background-color: rgb(230, 221, 221);
+}
+
+.app {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.todoListItems {
+    flex-grow: 1;
+    overflow-y: scroll;
+}
+
+.todoListItem {
+    border: 2px solid black;
+    border-radius: 6px;
+    width: 50%;
+    margin: 5px auto;
+    position: relative;
+    padding: 5px;
+}
+
+.todoListItem > div > h3, .todoListItem > div > p {
+    display: inline-block;
+}
+
+.todoListItem button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 25px;
+    background-color: red;
+    font-size: 1.1em;
+    font-weight: 700;
+}
+
+.todoListItem a {
+    text-decoration: none;
+    font-style: italic;
+    font-size: 1.05em;
+}
+
+.navbar a {
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 700;
+    padding: 10px 0;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footerEntry {
+    padding: 15px 0;
+}
+
+.footerEntry > button {
+    padding: 5px;
+}
+
+.addTodoListItem {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.addTodoListItemFormEntry {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.addTodoListItemFormEntry label {
+    font-size: 1.1em;
+    font-weight: 700;
+}
+
+.addTodoListItemFormEntry span {
+    position: absolute;
+    top: 36px;
+    left: 80%;
+    color: red;
+    font-weight: 700;
+}
+
+.addTodoListItemFormEntry input, textarea {
+    display: block;
+    width: 60%;
+    line-height: 1.1em;
+    font-size: 1.1em;
+    padding: 5px;
+    margin: 13px 0;
+}
+
+.addTodoListItem button {
+    display: block;
+    width: 10%;
+    margin: 0 auto;
+    padding: 5px;
+    background-color: orange;
+    font-weight: 600;
+}
